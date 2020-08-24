@@ -1,0 +1,55 @@
+:root {
+	--bg-page-color: #49B571;
+	--btn-color: #49B571;
+	--bag-iten-selected-color: #EAC14D;
+	--bg-color-bag-item: #E3E98B;
+	--bg-itens-div: #CAD26D;
+	--bg-params-input: #F5F5F5;
+}
+
+.classifier-wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100%;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.classify-container {
+    margin: auto;
+    width: 50%;
+    border: 2px dotted green;
+    padding: 10px;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    width: 99%;
+    margin-bottom: 10px;
+}
+
+.btn-classify {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    background-color: #8e44ad;
+    color: white;
+}
+
+.btn-classify:active {
+    background-color: blue;
+}
