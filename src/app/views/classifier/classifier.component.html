@@ -1,9 +1,9 @@
 <div class="classifier-wrapper">
 <div class="classify-container">
-    <textarea placeholder="Digite ou cole o texto do processo que deverá ser classificado" cols=90% rows=20></textarea>
+    <textarea placeholder="Digite ou cole o texto do processo que deverá ser classificado" cols=90% rows=20 [(ngModel)]="frontText"></textarea>
 
-    <button class="btn-classify" (click)="classify()">Classificar</button>
+    <button class="btn-classify" (click)="predict()">Classificar</button>
 
-    <p class="classify-result">Resultado: </p>
+    <p class="classify-result">Resultado: {{ result }}</p>
 </div>
 </div>
