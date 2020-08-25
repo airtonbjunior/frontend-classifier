@@ -7,6 +7,7 @@ import { ResponseClassifier } from 'src/app/shared/model/responseClassifier.mode
   templateUrl: './classifier.component.html',
   styleUrls: ['./classifier.component.css']
 })
+
 export class ClassifierComponent implements OnInit {
 
   classifierResult: ResponseClassifier;
@@ -20,11 +21,11 @@ export class ClassifierComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  predict() {
+  classify() {
     this.classifierService.classify({"text" : this.frontText}).subscribe(data => {
       this.classifierResult = data;
-      console.log(this.classifierResult)
       this.result = this.classifierResult;
+      console.log(this.classifierResult)
       console.log(this.frontText)
     });
   }
