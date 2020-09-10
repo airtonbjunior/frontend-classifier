@@ -12,6 +12,8 @@ export class ClassifierComponent implements OnInit {
 
   classifierResult: ResponseClassifier;
   result: any = "";
+  textSize: number;
+  wordCount: number;
   frontText: any;
 
   constructor(
@@ -24,9 +26,12 @@ export class ClassifierComponent implements OnInit {
   classify() {
     this.classifierService.classify({"text" : this.frontText}).subscribe(data => {
       this.classifierResult = data;
-      this.result = this.classifierResult;
+      this.result = "classe " + this.classifierResult;
+      this.textSize = this.frontText.length;
+      this.wordCount = this.frontText.split(' ').length;
       console.log(this.classifierResult)
       console.log(this.frontText)
+      console.log(this.frontText.length)
     });
   }
 }
